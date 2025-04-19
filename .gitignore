@@ -1,0 +1,9 @@
+.token
+*.aux
+*.log
+*.out
+*.pdf
+
+# ignoruj zawartość, ale zachowaj folder
+build/*
+!build/.gitkeep

@@ -1,0 +1,95 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{tikz}  % Pakiet do zaokrąglania zdjęcia
+\usepackage{array}
+\usepackage{ifthen}
+
+% Zmienne
+\newcommand{\firma}{NAZWA FIRMY}
+\def\doclanguage{pl}
+
+
+% Ustawienia strony
+\geometry{top=20mm,bottom=20mm,left=20mm,right=20mm}
+
+% Nagłówki
+\pagestyle{fancy}
+\fancyhead[L]{Krystian Kaczmarek}
+\fancyhead[C]{CV}
+\fancyhead[R]{Cyber Security - Red Team}
+\setlength{\headheight}{15pt}
+
+\begin{document}
+
+% Nagłówek - okrągłe zdjęcie i tekst po prawej 
+\begin{table}[h!]
+    \centering
+    \renewcommand{\arraystretch}{1.2}  
+    \begin{tabular}{m{4cm} m{10cm}}  
+        % Okrągłe zdjęcie
+        \begin{tikzpicture}
+            \clip (0,0) circle (1.75cm);
+            \node at (0,0) {\includegraphics[width=3.5cm]{images/photo.png}};
+        \end{tikzpicture}
+        &
+        % Tekst obok zdjęcia 
+        \begin{center}
+            \Huge \textbf{Krystian Kaczmarek} \\
+            \Large Cyber Security, \textbf{\textcolor{red}{Red Team}}
+        \end{center}
+    \end{tabular}
+\end{table}
+
+\vspace{-1.5em}
+
+% Belka z odnośnikami
+\begin{table}[h!]
+    \centering
+    \renewcommand{\arraystretch}{0.9}
+    \setlength{\tabcolsep}{4pt}
+    \begin{tabular}{m{0.4cm} m{5.6cm} m{0.4cm} m{3.3cm} m{0.4cm} m{5.2cm}}
+ 
+              \includegraphics[width=0.4cm]{images/envelope.png} 
+            & \href{mailto:krystian.kaczmarek@issa.org.pl}{krystian.kaczmarek@issa.org.pl} 
+            & \includegraphics[width=0.4cm]{images/mobile-phone.png} 
+            & \href{tel:+48790756623}{+48 790 756 623} 
+            & \includegraphics[width=0.4cm]{images/linkedin.png} 
+            & \href{https://www.linkedin.com/in/krystiankaczmarek}{/in/krystiankaczmarek} \\
+ 
+              \includegraphics[width=0.4cm]{images/map-marker.png} 
+            & Koszalin, Jana z Kolna 36/45 
+            & &
+            & \includegraphics[width=0.4cm]{images/github.png} 
+            & \href{https://github.com/6337r007}{/6337r007} \\
+    \end{tabular}
+\end{table}
+
+\vspace{-0.5em}
+\textcolor{red}{\rule{15cm}{1pt}}
+
+
+% Zawartość dokumentu
+\input{work_experience.tex}
+\input{education.tex}
+\input{community_engagment_and_volunteering.tex}
+\input{about_me.tex}
+\input{skills.tex}
+\input{presentations.tex}
+\input{languages.tex}
+
+\begin{center}
+\textcolor{red}{\rule{15cm}{1pt}}
+\end{center}
+
+% RODO
+\begin{center}
+    \small{I hereby give consent for my personal data to be processed by \textbf{\firma} for the purpose of conducting recruitment for the position for which I am applying.}
+\end{center}
+
+\end{document}

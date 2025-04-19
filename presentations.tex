@@ -1,0 +1,27 @@
+\ifthenelse{\equal{\doclanguage}{pl}}{
+\section*{Wystąpienia}
+
+\begin{itemize}
+    \item GIT - \url{https://www.youtube.com/watch?v=ko_n3w2-6ncA}
+    \item Tunneling - \url{https://www.youtube.com/watch?v=A2wY4kkbrUE}
+    \item AitM - \url{https://www.youtube.com/watch?v=B7RUsLjuOqk}
+    \item więcej.. \url{https://www.youtube.com/@NotTheHiddenWiki/search?query=Krystiana}
+\end{itemize}
+}{}
+\ifthenelse{\equal{\doclanguage}{en}}{
+\section*{Presentations}
+
+\begin{itemize}
+    \item GIT - \url{https://www.youtube.com/watch?v=ko_n3w2-6ncA}
+    \item Tunneling - \url{https://www.youtube.com/watch?v=A2wY4kkbrUE}
+    \item AitM - \url{https://www.youtube.com/watch?v=B7RUsLjuOqk}
+    \item more.. \url{https://www.youtube.com/@NotTheHiddenWiki/search?query=Krystiana}
+\end{itemize}
+}{
+
+}{}
+\ifthenelse{\not\equal{\doclanguage}{pl} \and \not\equal{\doclanguage}{en}}{
+    \section*{Błąd języka / Language Error}
+    \textit{Wybierz poprawną wartość zmiennej \texttt{\textbackslash doclanguage}: \texttt{pl} lub \texttt{en}.} \\
+    \textit{Please set the \texttt{\textbackslash doclanguage} variable to either \texttt{pl} or \texttt{en}.}
+}{}

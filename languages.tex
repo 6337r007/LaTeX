@@ -1,0 +1,22 @@
+\ifthenelse{\equal{\doclanguage}{pl}}{
+\section*{Języki}
+
+\begin{itemize}
+    \item Polski - ojczysty
+    \item Angielski - C1
+\end{itemize}
+}{}
+\ifthenelse{\equal{\doclanguage}{en}}{
+\section*{Languages}
+
+\begin{itemize}
+    \item Polish - Native Speaker
+    \item English - C1
+\end{itemize}
+
+}{}
+\ifthenelse{\not\equal{\doclanguage}{pl} \and \not\equal{\doclanguage}{en}}{
+    \section*{Błąd języka / Language Error}
+    \textit{Wybierz poprawną wartość zmiennej \texttt{\textbackslash doclanguage}: \texttt{pl} lub \texttt{en}.} \\
+    \textit{Please set the \texttt{\textbackslash doclanguage} variable to either \texttt{pl} or \texttt{en}.}
+}{}

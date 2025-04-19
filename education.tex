@@ -1,0 +1,34 @@
+\ifthenelse{\equal{\doclanguage}{pl}}{
+\section*{Wykształcenie}
+
+\subsection*{Specjalista RED TEAM}
+\raggedright\textbf{Uniwersytet Warszawski, HackerU by ThriveDX} \hfill \raggedleft\textit{Lipiec 2023 – Czerwiec 2024} \\
+\vspace{1em}
+\raggedright \textit{Ukończyłem 565-godzinne rozszerzone szkolenie na stanowisko specjalisty RED Team, skupiające się na zaawansowanych technikach testów penetracyjnych, eksploatacji sieci oraz post-eksploatacji. Obecnie przygotowuję się do certyfikacji OSCP.}
+
+\subsection*{Magister inżynier, IoT Koszalin}
+\raggedright\textbf{Elektronika i Telekomunikacja} \hfill \raggedleft\textit{Październik 2005 – Maj 2011} \\
+\vspace{1em}
+\raggedright\textit{Studia z zakresu Elektroniki i Telekomunikacji, które zapewniły solidne podstawy do dalszego rozwoju w branży technologicznej.}
+
+}{}
+\ifthenelse{\equal{\doclanguage}{en}}{
+\section*{Education}
+
+\subsection*{REDTEAM SPECIALIST}
+\raggedright\textbf{University Of Warsaw, HackerU by ThriveDX} \hfill \raggedleft\textit{July 2023 - June 2024} \\
+\vspace{1em}
+\raggedright \textit{Successfully completed a 565-hour extended training program for a RED Team Specialist, focusing on advanced penetration testing, network exploitation, and post-exploitation techniques. Currently preparing for the OSCP certification.}
+
+\subsection*{Master's Degree, IoT Koszalin}
+\raggedright\textbf{Electronics and Telecommunication} \hfill \raggedleft\textit{October 2005 - May 2011} \\
+\vspace{1em}
+\raggedright\textit{Completed studies in Electronics and Telecommunication, providing a robust foundation for further development in the technology industry.}
+}{
+
+}{}
+\ifthenelse{\not\equal{\doclanguage}{pl} \and \not\equal{\doclanguage}{en}}{
+    \section*{Błąd języka / Language Error}
+    \textit{Wybierz poprawną wartość zmiennej \texttt{\textbackslash doclanguage}: \texttt{pl} lub \texttt{en}.} \\
+    \textit{Please set the \texttt{\textbackslash doclanguage} variable to either \texttt{pl} or \texttt{en}.}
+}{}

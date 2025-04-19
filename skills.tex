@@ -1,0 +1,27 @@
+\ifthenelse{\equal{\doclanguage}{pl}}{
+\section*{Umiejętności}
+
+\begin{itemize}
+    \item Umiejętności detektywistyczne – żadna flaga się przede mną nie ukryje
+    \item Narzędzia cyberbezpieczeństwa, elektronarzędzia – ogarniam jedne i drugie
+    \item Linux OS, Windows OS oraz każdy inny chaOS
+    \item Układanie kostki Rubika obiema rękami i rozwiązywanie problemów jedną!
+    \item Tłumaczenie zawiłych rzeczy w prosty sposób
+\end{itemize}
+}{}
+\ifthenelse{\equal{\doclanguage}{en}}{
+\section*{Skills}
+
+\begin{itemize}
+    \item Detective skills, no flag can hide from me
+    \item Cybersecurity tools, power tools, I can handle both
+    \item Linux OS, Windows OS, and any other chaOS
+    \item Solving Rubik's Cube with both hands and problems with just one hand!
+    \item Explaining complex things in a simple way
+\end{itemize}
+}{}
+\ifthenelse{\not\equal{\doclanguage}{pl} \and \not\equal{\doclanguage}{en}}{
+    \section*{Błąd języka / Language Error}
+    \textit{Wybierz poprawną wartość zmiennej \texttt{\textbackslash doclanguage}: \texttt{pl} lub \texttt{en}.} \\
+    \textit{Please set the \texttt{\textbackslash doclanguage} variable to either \texttt{pl} or \texttt{en}.}
+}{}

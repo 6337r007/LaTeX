@@ -56,6 +56,13 @@ Instalowane automatycznie przez `install_tex.sh`:
 - `texlive-pictures`
 - `texlive-lang-polish`
 
+    ⚠️ Jeśli masz inną dystrybucję np. Arch pakiety nazywają się trochę inaczej. Możesz je zainstalować za pomocą komend: 
+
+    ```bash
+    sudo pacman -S texlive-core texlive-binextra texlive-xetex texlive-latexextra texlive-fontsextra texlive-fontsrecommended texlive-pictures texlive-lang
+    sudo fmtutil-sys --all
+    ```
+
 ---
 
 ## 📁 Struktura katalogów

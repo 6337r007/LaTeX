@@ -9,9 +9,13 @@
 \usepackage{tikz}  % Pakiet do zaokrąglania zdjęcia
 \usepackage{array}
 \usepackage{ifthen}
+\usepackage{fontspec}
+
+\setmainfont{montserrat}
 
 % Zmienne
-\newcommand{\firma}{NAZWA FIRMY}
+% \newcommand{\firma}{NAZWA FIRMY}
+\newcommand{\firma}{SEQRED International Sp. z o.o.}
 \def\doclanguage{pl}
 
 
@@ -22,7 +26,8 @@
 \pagestyle{fancy}
 \fancyhead[L]{Krystian Kaczmarek}
 \fancyhead[C]{CV}
-\fancyhead[R]{Cyber Security - Red Team}
+\fancyhead[R]{OT Security Engineer}
+% \fancyhead[R]{Cyber Security - Red Team}
 \setlength{\headheight}{15pt}
 
 \begin{document}
@@ -41,7 +46,8 @@
         % Tekst obok zdjęcia 
         \begin{center}
             \Huge \textbf{Krystian Kaczmarek} \\
-            \Large Cyber Security, \textbf{\textcolor{red}{Red Team}}
+            \Large \textbf{\textcolor{red}{OT}} Security Engineer
+            % \Large Cyber Security, \textbf{\textcolor{red}{Red Team}}
         \end{center}
     \end{tabular}
 \end{table}
@@ -53,6 +59,7 @@
     \centering
     \renewcommand{\arraystretch}{0.9}
     \setlength{\tabcolsep}{4pt}
+    {\footnotesize
     \begin{tabular}{m{0.4cm} m{5.6cm} m{0.4cm} m{3.3cm} m{0.4cm} m{5.2cm}}
  
               \includegraphics[width=0.4cm]{images/envelope.png} 
@@ -68,6 +75,7 @@
             & \includegraphics[width=0.4cm]{images/github.png} 
             & \href{https://github.com/6337r007}{/6337r007} \\
     \end{tabular}
+    }
 \end{table}
 
 \vspace{-0.5em}
@@ -87,9 +95,18 @@
 \textcolor{red}{\rule{15cm}{1pt}}
 \end{center}
 
+
 % RODO
+\ifthenelse{\equal{\doclanguage}{pl}}{
+\begin{center}
+    \small{Wyrażam zgodę na przetwarzanie moich danych osobowych przez \textbf{\firma} w celu przeprowadzenia bieżącej rekrutacji na stanowisko, na które aplikuję, a także przyszłych rekrutacji, zgodnie z ustawą z dnia 10 maja 2018 r. o ochronie danych osobowych (tj. Dz.U. z 2024 r. poz. 1066) oraz Rozporządzeniem Parlamentu Europejskim i Rady (UE) 2016/679 (RODO).}
+\end{center}
+}{}
+\ifthenelse{\equal{\doclanguage}{en}}{
+\section*{Languages}
 \begin{center}
     \small{I hereby give consent for my personal data to be processed by \textbf{\firma} for the purpose of conducting recruitment for the position for which I am applying.}
 \end{center}
+}{}
 
 \end{document}
